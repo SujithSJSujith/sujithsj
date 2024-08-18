@@ -1,0 +1,87 @@
+.home-component {
+    background-color: rgb(0, 0, 0, 0.0);  
+}
+
+.navigation {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    //background-color: rgb(5, 22, 5);
+}
+
+ul {
+    float: right;
+    height: 100%;
+    margin-top: 40px;
+    padding-right: 30px;
+}
+li {
+    display: inline;
+    
+}
+
+.a-nav {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    &:hover {
+        color: #775CE5;
+    }
+}
+
+.contact {
+    color: rgb(0, 209, 232);
+    border: solid 1px rgb(0, 209, 232, 0.5);
+    border-radius: 32px;    
+    font-size: 15px;
+    &:hover {
+        color: white;
+        border: solid 1px rgb(0, 0, 0, 0.5);
+        background-color: rgb(0, 209, 232);
+    }
+}
+
+.box {
+    position: relative;
+    top:80px;
+    .left-box{
+        background-color: rgb(0,0,0,0.0);
+        border: none;
+        justify-content: center;
+        .greeting {
+            color: #8566FF;
+            font-family: Roboto Mono, sans-serif;
+            font-size: 20px;
+        }
+        .description {
+            color: white;
+            font-size: 50px;
+        }
+        .image {
+            margin: 50px;
+
+            &:hover {
+                cursor: pointer;
+                scale: 120%;
+            }
+        }
+        p {
+            color: white;
+        }
+    }
+    .right-box{
+        background-color: rgb(0,0,0,0.0);
+        border: none;
+        .photo {
+            width: 80%;
+            height: 500px;
+            margin: 10%;
+            border: solid 5px rgb(0, 209, 232);
+        }
+    }
+}
+
+
