@@ -3,11 +3,32 @@
 // @import "~bootstrap/dist/css/bootstrap.min.css";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
+// html, body {
+//     background-color: rgb(17, 18, 35);
+//     height: 100%;
+//     width: 100%;
+//     scrollbar-width: none;
+//     color: white;
+//     cursor: default;
+// }
+/* The animation code */
+@keyframes example {
+  0%   {background-image: radial-gradient(rgb(17, 18, 45), 2px, transparent 0);}
+  25%  {background-image: radial-gradient(rgb(17, 18, 40), 2px, transparent 0);}
+  50%  {background-image: radial-gradient(rgb(17, 18, 35), 2px, transparent 0);}
+  75%  {background-image: radial-gradient(rgb(17, 18, 40), 2px, transparent 0);}
+  100% {background-image: radial-gradient(rgb(17, 18, 45), 2px, transparent 0);}
+}
 html, body {
-    background-color: rgb(17, 18, 35);
-    height: 100%;
-    width: 100%;
-    scrollbar-width: none;
-    color: white;
-    cursor: default;
+  background: rgb(17, 18, 35);
+  background-image: radial-gradient(black 1px, transparent 0);
+  background-size: 5px 5px;
+  animation-name: example;
+  animation: example 4s infinite;
+  background-position: -19px -19px;
+  height: 100%;
+  width: 100%;
+  scrollbar-width: none;
+  color: white;
+  cursor: default;
 }
